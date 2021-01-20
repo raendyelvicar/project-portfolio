@@ -1,0 +1,117 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  font-size: 13px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: white;
+  background-color: #ecf2f8;
+}
+
+p {
+  font-size: 13px;
+  line-height: 1.5;
+  opacity: 75%;
+}
+
+.shadow {
+  -webkit-box-shadow: 3px 3px 5px 6px #dddcdc;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 5px 3px 20px 6px #dddcdc;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15rem 15rem 15rem 15rem;
+      grid-template-columns: 15rem 15rem 15rem 15rem;
+  -ms-grid-rows: 18rem 18rem;
+      grid-template-rows: 18rem 18rem;
+      grid-template-areas: " a a b e" " c d d e";
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  row-gap: 2rem;
+  padding: 7rem 8.5rem;
+  font-size: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid .item {
+  border-radius: 10px;
+  padding: 32px;
+}
+
+.grid .item .section-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.grid .item span {
+  opacity: 50%;
+}
+
+.grid .item .text-large {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.grid .item-a {
+  background-color: #7541c8;
+  width: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: a;
+}
+
+.grid .item-b {
+  background-color: #48556a;
+  width: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: b;
+}
+
+.grid .item-c {
+  background-color: white;
+  width: 100%;
+  color: black;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: c;
+}
+
+.grid .item-d {
+  background-color: #19212e;
+  width: 100%;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: d;
+}
+
+.grid .item-e {
+  background-color: white;
+  border: 1px;
+  width: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: e;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
