@@ -1,7 +1,9 @@
+@import 'mixins';
+
 .grid{
     display: grid;
     grid-template-columns: 15rem 15rem 15rem 15rem ;
-    grid-template-rows: 18rem 18rem;
+    grid-template-rows: 18rem 18.5rem;
     grid-template-areas: 
     " a a b e"
     " c d d e"
@@ -10,14 +12,72 @@
     row-gap: 2rem;
     padding: 7rem 8.5rem;
     font-size: 13px;
-    align-items: center;
+
+    @include screen-size(xsmall){
+        padding: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+        grid-template-rows: none;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        ;
+    }
+
+    @include screen-size(small){
+        padding: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+        grid-template-rows: none;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        ;
+    }
+
+    @include screen-size(medium){
+        padding: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 2fr));
+        grid-template-rows: 25rem auto 16rem;
+        align-items: stretch;
+        grid-template-areas: 
+        "a d"
+        "b c"
+        "e e"
+        ;
+    }
+
+    @include screen-size(large){
+        grid-template-areas: 
+        " a a b"
+        " c d d"
+        " e e e"
+        ;
+    }
 
     .item{
         border-radius: 10px;
         padding: 32px;
+        
+        img{
+            border-radius: 50px;
+            height: 30px;
+            width: 30px;
+            border: 10px;
+            border-color: white;
+            margin-right:20px ;
+        }
 
         .section-item:not(:last-child){
             margin-bottom: 10px;
+        }
+
+        .section-item.head{
+            display: inline-flex;
         }
         
         span{

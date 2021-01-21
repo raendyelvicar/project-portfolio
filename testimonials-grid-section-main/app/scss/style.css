@@ -38,17 +38,56 @@ p {
   display: grid;
   -ms-grid-columns: 15rem 15rem 15rem 15rem;
       grid-template-columns: 15rem 15rem 15rem 15rem;
-  -ms-grid-rows: 18rem 18rem;
-      grid-template-rows: 18rem 18rem;
+  -ms-grid-rows: 18rem 18.5rem;
+      grid-template-rows: 18rem 18.5rem;
       grid-template-areas: " a a b e" " c d d e";
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
   row-gap: 2rem;
   padding: 7rem 8.5rem;
   font-size: 13px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+@media (max-width: 575.98px) {
+  .grid {
+    padding: 2rem;
+    -ms-grid-columns: (minmax(8rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    -ms-grid-rows: none;
+        grid-template-rows: none;
+        grid-template-areas: "a" "b" "c" "d" "e";
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .grid {
+    padding: 2rem;
+    -ms-grid-columns: (minmax(8rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    -ms-grid-rows: none;
+        grid-template-rows: none;
+        grid-template-areas: "a" "b" "c" "d" "e";
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .grid {
+    padding: 2rem;
+    -ms-grid-columns: (minmax(10rem, 2fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 2fr));
+    -ms-grid-rows: 25rem auto 16rem;
+        grid-template-rows: 25rem auto 16rem;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+        grid-template-areas: "a d" "b c" "e e";
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .grid {
+        grid-template-areas: " a a b" " c d d" " e e e";
+  }
 }
 
 .grid .item {
@@ -56,8 +95,23 @@ p {
   padding: 32px;
 }
 
+.grid .item img {
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+  border: 10px;
+  border-color: white;
+  margin-right: 20px;
+}
+
 .grid .item .section-item:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.grid .item .section-item.head {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .grid .item span {
