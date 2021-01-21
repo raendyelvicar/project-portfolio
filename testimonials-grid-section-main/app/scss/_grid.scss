@@ -62,8 +62,9 @@
     .item{
         border-radius: 10px;
         padding: 32px;
+        z-index: 2;
         
-        img{
+        .profile-img{
             border-radius: 50px;
             height: 30px;
             width: 30px;
@@ -78,6 +79,30 @@
 
         .section-item.head{
             display: inline-flex;
+
+            .quotation-img{
+                position: absolute;
+                opacity: 75%;
+                z-index: -1;
+                padding-left: 18.5rem;
+                top: 7rem;
+
+                @include screen-size(xsmall){
+                    padding-left: 15rem;
+                    top: 2rem;
+                  
+                }
+                @include screen-size(small){
+                    padding-left: 22rem;
+                    top: 2rem;
+                    
+                }
+                @include screen-size(medium){
+                    padding-left:11rem;
+                    top: 2rem;
+                    height: 6rem;
+                }
+             }
         }
         
         span{
@@ -95,6 +120,7 @@
         width: 100%;
         grid-area:a;
     }
+
     .item-b{
         background-color: $darkGrayishBlue;
         width: 100%;
