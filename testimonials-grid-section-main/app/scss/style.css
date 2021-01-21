@@ -44,48 +44,54 @@ p {
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
   row-gap: 2rem;
-  padding: 7rem 8.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
   font-size: 13px;
 }
 
 @media (max-width: 575.98px) {
   .grid {
-    padding: 2rem;
     -ms-grid-columns: (minmax(8rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
     -ms-grid-rows: none;
         grid-template-rows: none;
+    padding: 20px;
         grid-template-areas: "a" "b" "c" "d" "e";
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .grid {
-    padding: 2rem;
     -ms-grid-columns: (minmax(8rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
     -ms-grid-rows: none;
         grid-template-rows: none;
+    padding: 20px;
         grid-template-areas: "a" "b" "c" "d" "e";
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .grid {
-    padding: 2rem;
-    -ms-grid-columns: (minmax(10rem, 2fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 2fr));
+    -ms-grid-columns: (minmax(12rem, 2fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 2fr));
     -ms-grid-rows: 25rem auto 16rem;
         grid-template-rows: 25rem auto 16rem;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+    padding: 20px;
         grid-template-areas: "a d" "b c" "e e";
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .grid {
+    -ms-grid-columns: (minmax(12rem, 2fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 2fr));
+    padding: 20px;
         grid-template-areas: " a a b" " c d d" " e e e";
   }
 }
@@ -120,7 +126,7 @@ p {
   opacity: 75%;
   z-index: -1;
   padding-left: 18.5rem;
-  top: 7rem;
+  top: 1rem;
 }
 
 @media (max-width: 575.98px) {
@@ -142,6 +148,13 @@ p {
     padding-left: 11rem;
     top: 2rem;
     height: 6rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .grid .item .section-item.head .quotation-img {
+    padding-left: 25rem;
+    top: 2rem;
   }
 }
 

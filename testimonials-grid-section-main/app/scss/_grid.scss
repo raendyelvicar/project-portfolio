@@ -10,13 +10,14 @@
     ;
     column-gap:2rem;
     row-gap: 2rem;
-    padding: 7rem 8.5rem;
+    justify-content: center;
+    margin: 10px;
     font-size: 13px;
 
     @include screen-size(xsmall){
-        padding: 2rem;
         grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
         grid-template-rows: none;
+        padding: 20px;
         grid-template-areas: 
         "a"
         "b"
@@ -27,9 +28,9 @@
     }
 
     @include screen-size(small){
-        padding: 2rem;
         grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
         grid-template-rows: none;
+        padding: 20px;
         grid-template-areas: 
         "a"
         "b"
@@ -40,10 +41,10 @@
     }
 
     @include screen-size(medium){
-        padding: 2rem;
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 2fr));
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 2fr));
         grid-template-rows: 25rem auto 16rem;
         align-items: stretch;
+        padding: 20px;
         grid-template-areas: 
         "a d"
         "b c"
@@ -52,6 +53,8 @@
     }
 
     @include screen-size(large){
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 2fr));
+        padding: 20px;
         grid-template-areas: 
         " a a b"
         " c d d"
@@ -85,7 +88,7 @@
                 opacity: 75%;
                 z-index: -1;
                 padding-left: 18.5rem;
-                top: 7rem;
+                top: 1rem;
 
                 @include screen-size(xsmall){
                     padding-left: 15rem;
@@ -101,6 +104,11 @@
                     padding-left:11rem;
                     top: 2rem;
                     height: 6rem;
+                }
+                @include screen-size(large){
+                    padding-left:25rem;
+                    top: 2rem;
+                  
                 }
              }
         }
