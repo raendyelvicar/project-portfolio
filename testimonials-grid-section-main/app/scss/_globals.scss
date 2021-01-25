@@ -1,0 +1,34 @@
+@import 'variables';
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+    
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0; 
+    line-height: 1.2;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: white;
+    background-color: $lightGrayishBlue;
+}
+
+p{
+    font-size: 13px;
+    line-height: 1.5;
+    opacity: 75%;
+}
+
+.shadow{
+    -webkit-box-shadow: 3px 3px 5px 6px  rgb(221, 220, 220);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px  rgb(221, 220, 220);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         5px 3px 20px 6px rgb(221, 220, 220);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
