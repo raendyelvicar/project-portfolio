@@ -17,7 +17,10 @@
     @include screen-size(xsmall){
         grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
         grid-template-rows: none;
+        justify-content: center;
         padding: 20px;
+        margin: 0 auto;
+        vertical-align: middle;
         grid-template-areas: 
         "a"
         "b"
@@ -91,8 +94,7 @@
                 top: 1rem;
 
                 @include screen-size(xsmall){
-                    padding-left: 15rem;
-                    top: 2rem;
+                   visibility: hidden;
                   
                 }
                 @include screen-size(small){

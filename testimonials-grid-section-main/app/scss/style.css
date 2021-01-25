@@ -57,7 +57,12 @@ p {
         grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
     -ms-grid-rows: none;
         grid-template-rows: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 20px;
+    margin: 0 auto;
+    vertical-align: middle;
         grid-template-areas: "a" "b" "c" "d" "e";
   }
 }
@@ -131,8 +136,7 @@ p {
 
 @media (max-width: 575.98px) {
   .grid .item .section-item.head .quotation-img {
-    padding-left: 15rem;
-    top: 2rem;
+    visibility: hidden;
   }
 }
 
