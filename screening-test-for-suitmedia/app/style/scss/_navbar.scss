@@ -1,0 +1,213 @@
+@import 'variables';
+
+nav{
+    background: $white;
+}
+
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav{
+    .logo a{
+        float: left;
+        color: $black;
+        font-size:20px;
+        text-transform: capitalize;
+        font-weight: 600;
+        line-height: 70px;
+        padding-left: 60px;
+    }
+
+    ul{
+        float: right;
+        margin-right: 40px;
+        list-style: none;
+        position: relative;
+        z-index: 1;
+
+        li{
+            display: inline-block;
+            background:$white;
+            margin: 0 5px;
+            float: left;
+
+            a{
+                color: $black;
+                line-height: 70px;
+                text-decoration: none;
+                font-size: 13px;
+                text-transform: uppercase;
+                padding: 8px 15px;
+
+                &:hover{
+                    color: $gray;
+                }
+            }
+        }
+
+        li:hover > ul{
+            top: 70px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* Submenu styles*/
+        ul{
+            position: absolute;
+            top: 90px;
+            border-top: 3px solid cyan;
+            opacity: 0;
+            visibility: hidden;
+            // transition: top .3s;
+
+            ul{
+                border-top: none;
+                
+                li{
+                    position: relative;
+                    top: -60px;
+                    left: 150px;
+                }
+            }
+
+            /* Subitem styles */
+            li{
+                position: relative;
+                margin: 0px;
+                width: 150px;
+                float: none;
+                display: list-item;
+                border-bottom: 1.2px solid #11111129;
+                width: 200px;
+
+                a{
+                    line-height: 50px;
+                }
+
+                &:hover{
+                     background-color: $black;
+                    a{
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        ul li a:hover{
+            box-shadow: none;
+        }
+
+    }
+}
+
+
+.show,  .icon,input{
+    display: none;
+}
+
+dl,ol,ul{
+    margin-bottom: 0rem;
+    padding-left: 0;
+}
+
+
+@media all and (max-width: 968px) {
+    nav {
+        .logo{
+            width: 100%;
+        }
+
+        ul{
+            padding-right:5px;
+            width: 100%;
+            float: left;
+
+            li{
+                border-bottom: 2px #11111129 solid;
+                a:hover{
+                    box-shadow: none;
+                }
+            }
+
+            ul{
+                top: 70px;
+                border-top: 0px;
+                float: none;
+                position: static;
+                display: none;
+                opacity: 1;
+                visibility: visible;
+
+                li{
+                    border-bottom: 0px;
+                    background-color: rgb(235, 235, 235);
+                }
+
+                a{
+                    padding-left: 40px;
+                }
+
+                ul{
+                    li{
+                        position: static;
+                    }
+
+                    a{
+                        padding-left: 80px;
+                    }
+                }
+            }
+        }
+    }
+
+    .show + a, ul{
+        display: none;
+    }
+
+    nav ul li, nav ul ul li{
+        display: block;
+        width: 100%;
+    }
+
+    .show{
+        display: block;
+        color: $black;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 600;
+        
+    }
+
+    .show:hover{
+        color:$gray;
+    }
+
+    .icon{
+        display: block;
+        color: $black;
+        position: absolute;
+        top: 0;
+        right: 40px;
+        line-height: 70px;
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+    [id^=btn]:checked + ul{
+        display: block;
+    }
+
+    span.cancel:before{
+        content: '\f00d';
+        color: $black;
+    }
+}
+

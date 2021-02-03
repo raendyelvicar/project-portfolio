@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="/app/style/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/app/icon/css/font-awesome.min.css">
+    <title>Screening Test | Raendy Andhika El Vicar</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <a href="">
+            company
+          </a>
+        </div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul>
+           <li>
+              <label for="btn-1" class="show">about</label>
+              <a href="#">about</a>
+              <input type="checkbox" id="btn-1">
+              <ul class="sub-menu">
+                 <li><a href="#">history</a></li>
+                 <li><a href="#">vision mission</a></li>
+              </ul>
+           </li>
+           <li><a href="">our work</a></li>
+           <li><a href="">our team</a></li>
+           <li><a href="">contact</a></li>
+        </ul>
+     </nav>
+
+    
+
+    <section class="hero-slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="app/img/about-bg.jpg" class="d-block w-100" alt="item-1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="caption-text">we don't have the best but we have the greatest team</h5>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/app/img/bg.jpg" class="d-block w-100" alt="item-2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="caption-text">this is a place where technology and creativity fused into digital chemistry</h5>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+              <span><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+              <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+    </section>
+
+    <section class="main-area">
+        <div class="our-value">
+          <h4 class="title-area">our values</h4>
+          <div class="flex-container">
+            <div class="flex-item item-1">
+              <img src="/app/img/lightbulb-o.png" alt="">
+              <h5 class="title-item">innovative</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ut ex cupiditate? Tempore, error molestias.</p>
+            </div>
+            <div class="triangle-1"></div>
+
+            <div class="flex-item item-2">
+              <img src="/app/img/bank.png" alt="">
+              <h5 class="title-item">loyalty</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam impedit modi, recusandae sit nihil doloribus.</p>
+            </div>
+            <div class="triangle-2"></div>
+
+            <div class="flex-item item-3">
+              <img src="/app/img/balance-scale.png" alt="">    
+              <h5 class="title-item">respect</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi alias quam sit delectus itaque sed.</p>
+          </div>
+          </div>
+        </div>
+
+        <div class="contact">
+          <h4 class="title-area">contact us</h4>
+
+          <form class="contact-form" name="contact"> 
+            <div class="form-group">
+              <label for="exampleInputName">Name</label>
+              <input type="text" class="form-control" id="exampleInputName" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Message</label>
+              <textarea class="form-control" id="exampleInputMessage"  cols="80" rows="8" value="" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" style="width: 100%;">SUBMIT</button>
+          </form>
+        </div>
+    </section>
+
+  
+    <footer class="footer">
+        <p>Copyright&copy; 2021. PT. Company</p>
+        <div class="footer-icon">
+            <a href=""><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="/app/js/script.js"></script>
+
+    <script>
+        $('.icon').click(function(){
+          $('span').toggleClass("cancel");
+        });
+     </script>
+</body>
+</html> 

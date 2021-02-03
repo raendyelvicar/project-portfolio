@@ -1,0 +1,27 @@
+footer{
+    background-color: $black;
+    flex-direction: column;
+    padding: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    @include flexCenter;
+
+    p{
+        color: $white;
+    }
+}
+
+.footer-icon{
+    a {
+        margin: 0 5px;
+
+        i{
+            color: $white;
+        }
+    }
+
+    a:hover i{
+       color: $gray;
+    }
+}

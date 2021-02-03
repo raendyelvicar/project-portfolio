@@ -1,0 +1,251 @@
+@import 'variables';
+
+.carousel{
+    height: 100vh;
+
+    .carousel-indicators{
+        display: flex;
+        li{
+            border-radius: 50%;
+        }
+    }
+
+    .carousel-control-prev, .carousel-control-next{
+        margin: auto;
+        display: flex;
+        justify-content: first baseline;
+        top: 0;
+        font-size: 25px;
+
+        i{  
+            height: 30px;
+            width:30px;
+            margin: auto;
+            border: 1.5px white solid;
+            border-radius: 25px;
+            @include flexCenter;
+            
+            &:hover{
+                background-color: white;
+                border: 1.5px transparent solid;
+                color: black;
+            }
+        }
+    }
+}
+
+.carousel-inner{
+    img{
+        height: 100vh;
+    }
+}
+
+.carousel-caption{
+    background-color: #0000009e;
+    display: flex;
+    bottom: 20%;
+    width: 50%;
+    height: 90px;
+
+    .caption-text{
+        text-transform: uppercase;
+        margin:auto;
+        padding-left:20px;
+        text-align: left;
+        line-height: 1.4;
+        font-weight: 550;
+    }
+}
+
+
+@media all and (max-width: 575.98px){
+    .carousel-inner{
+        img{
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    .carousel{
+        height: auto;
+        width: 100%;
+
+        .carousel-indicators{
+            li{
+                // display: block;
+                height: 5px;
+                width: 5px;
+            }
+        }
+
+        a{
+            display: block;
+            top: 50%;
+        }
+
+        span{
+            height: 20px;
+            align-items: center;
+        }
+
+        .carousel-control-prev, .carousel-control-next{
+            font-size: 15px;
+                
+            i{  
+                height: 20px;
+                width:20px;
+            }
+        }
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .carousel-inner{
+        img{
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    .carousel{
+
+        height: auto;
+        width: 100%;
+
+        .carousel-indicators{
+            li{
+                // display: block;
+                height: 8px;
+                width: 8px;
+            }
+        }
+
+        a{
+            display: block;
+            top: 50%;
+        }
+
+        span{
+            height: 20px;
+            align-items: center;
+        }
+    } 
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .carousel-inner{
+        img{
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    .carousel{
+
+        height: auto;
+        width: 100%;
+
+        .carousel-indicators{
+            li{
+                // display: block;
+                height: 8px;
+                width: 8px;
+            }
+        }
+
+        a{
+            display: block;
+            top: 50%;
+        }
+
+        span{
+            height: 20px;
+            align-items: center;
+        }
+    }
+
+    .carousel-caption{
+        width: 60%;
+
+        .caption-text{
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+    } 
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .carousel-inner{
+        img{
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    .carousel{
+
+        height: auto;
+        width: 100%;
+
+        .carousel-indicators{
+            li{
+                // display: block;
+                height: 8px;
+                width: 8px;
+            }
+        }
+
+        a{
+            display: block;
+            top: 50%;
+        }
+
+        span{
+            height: 20px;
+            align-items: center;
+        }
+    }
+
+    .carousel-caption{
+        width: 60%;
+
+        .caption-text{
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+    } 
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .carousel-inner{
+        img{
+            width: 100%;
+        }
+    }
+
+    .carousel{
+        width: 100%;
+        .carousel-indicators{
+            li{
+                // display: block;
+                height: 8px;
+                width: 8px;
+            }
+        }
+
+        a{
+            display: block;
+            top: 50%;
+        }
+
+        span{
+            height: 20px;
+            align-items: center;
+        }
+    }
+}

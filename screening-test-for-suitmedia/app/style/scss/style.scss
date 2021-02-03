@@ -1,0 +1,138 @@
+@import 'globals';
+@import 'mixins';
+@import 'variables';
+
+@import 'navbar';
+@import 'slider';
+
+@import 'footer';
+
+
+.main-area{
+    padding-bottom: 50px;
+
+    .our-value, .contact{
+       padding-top: 90px;   
+
+        h4{
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 27px;
+            font-weight: 600;
+        }
+    }
+
+    .flex-container{
+        flex-wrap: wrap;
+        flex-direction: row;
+        @include flexCenter;
+
+        .flex-item{
+            @include flexCenter;
+            flex-direction: column;
+            background-color: #EA7C6F;
+            border: 2px #d65f52 solid;
+            padding: 20px;
+            height: 240px;
+            width: 325px;
+            color: white;
+           margin-top: 20px;
+
+            img{
+                @include flexCenter;
+                height: 20px;
+                width: auto;
+            }
+
+            .title-item{
+                font-size: 18px;
+                text-transform: uppercase;
+                font-weight: 600;
+                margin: 20px;
+            }
+
+            p{  
+                font-size: 15px;
+                font-weight: 500;
+                text-align: center;
+                line-height: 1.5;
+            }
+        }
+
+        .item-2{
+            background-color:#6A996F;
+            border: 2px #568f5c solid;
+        }
+
+        .item-3{
+            background-color: #5696C2;
+            border: 2px #4286b3 solid;
+            margin-left: 0;
+        }
+    }
+
+    .triangle-1 {
+        height: 0;
+        width: 0;
+        border-left: 10px solid #d65f52;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-top: 10px solid transparent;
+
+        @include screen-size(xsmall){
+            display: none;
+        }
+      }
+
+      .triangle-2 {
+        height: 0;
+        width: 0;
+        border-left: 10px solid #568f5c;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-top: 10px solid transparent;
+
+        @include screen-size(xsmall){
+            display: none;
+        }
+      }
+
+      .contact{
+          form{
+              padding-left: 400px;
+              padding-right: 400px;
+
+              @include screen-size(xsmall){
+                padding-left: 50px;
+                padding-right: 50px;
+              }
+
+              @include screen-size(small){
+                padding-left: 84px;
+                padding-right: 84px;
+              }
+
+              @include screen-size(medium){
+                padding-left: 148px;
+                padding-right: 148px;
+              }
+
+              @include screen-size(large){
+                padding-left: 312px;
+                padding-right: 312px;
+                }
+
+              div, button{
+                  margin-top: 25px;
+              }
+
+              #exampleInputMessage{
+                  height:150px;
+              }
+
+              input, textarea, button{
+                  font-size: 13px;
+              }
+          }
+      }
+}
