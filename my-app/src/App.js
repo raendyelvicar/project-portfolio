@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
 import './App.css';
 import Home from './pages';
 import About from './pages/About';
@@ -20,6 +21,7 @@ function App() {
     <Router>
       <Navbar toggle={toggle}/>
       <ToggleNav isOpen={isOpen} toggle={toggle}/>
+      <HeroSection />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about"  component={About} />
@@ -27,6 +29,7 @@ function App() {
         <Route path="/contact"  component={Contact} />
       </Switch>
     </Router>
+    
   );
 }
 
