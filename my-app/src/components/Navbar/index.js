@@ -1,9 +1,10 @@
 import React from 'react';
-import { FaBars} from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import {Nav,NavbarContainer,NavLogo,MobileIcon,NavLink,NavMenu,NavItem} from './NavbarElements';
 
+
 const Navbar = ({ toggle }) => {
-    return (
+     return (
         <>
         <Nav>
             <NavbarContainer>
@@ -11,7 +12,9 @@ const Navbar = ({ toggle }) => {
                     <h1>XOXO</h1>
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
-                    <FaBars />
+                   {toggle ?
+                    <FaBars /> : <FaTimes />
+                   }
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>

@@ -4,7 +4,7 @@ import {NavLink as Link} from 'react-router-dom'
 
 export const ToggleNavContainer = styled.div`
     position:fixed;
-    z-index:1;
+    z-index:100;
     width:100%;
     height:100%;
     min-height:100vh;
@@ -34,7 +34,9 @@ export const ToggleNavMenu = styled.ul`
     grid-template-columns:1fr;
     grid-template-rows:repeat(6, 80px);
     gap:30px;
-    margin-top:100px;
+    position:absolute;
+    top:30%;
+    right:1%;
 
     @media screen and (max-width: 340px){
         grid-template-rows:repeat(6,60px);

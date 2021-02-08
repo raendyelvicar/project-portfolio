@@ -8,6 +8,7 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import ToggleNav from './components/ToggleMenu';
+import Card from './components/Card';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -22,6 +23,7 @@ function App() {
       <Navbar toggle={toggle}/>
       <ToggleNav isOpen={isOpen} toggle={toggle}/>
       <HeroSection />
+      <Card/>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about"  component={About} />

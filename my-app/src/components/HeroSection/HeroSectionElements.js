@@ -86,7 +86,7 @@ export const HeroTitle = styled.h1`
 `
 
 export const HeroDesc = styled.p`
-    font-size:16px;
+    font-size:18px;
     color:#fff;
     margin-top:10px;
     line-height:1.5;

@@ -9,9 +9,9 @@ const ToggleNav = ({isOpen, toggle}) => {
                 <FaTimes />
             </Icon>
             <ToggleNavMenu>
-                <ToggleNavLink to="/about">About</ToggleNavLink>
-                <ToggleNavLink to="/portfolio">Portfolio</ToggleNavLink>
-                <ToggleNavLink to="/contact">Contact</ToggleNavLink>
+                <ToggleNavLink to="/about" onClick={toggle}>About</ToggleNavLink>
+                <ToggleNavLink to="/portfolio" onClick={toggle}>Portfolio</ToggleNavLink>
+                <ToggleNavLink to="/contact" onClick={toggle}>Contact</ToggleNavLink>
             </ToggleNavMenu>    
         </ToggleNavContainer>
     )

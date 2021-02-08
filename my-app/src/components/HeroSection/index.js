@@ -1,6 +1,7 @@
 import React from 'react'
 import {HeroContainer, HeroBg, VideoBg, HeroContent,HeroWrapper, HeroTitle, HeroDesc, HeroIntro, HeroBtn, CtaBtn, ResumeBtn} from './HeroSectionElements'
 import video from '../../videos/video.mp4'
+import { Paragraph } from '../../GlobalVariables'
 
 const HeroSection = () => {
     return (
@@ -14,10 +15,10 @@ const HeroSection = () => {
                         Hello,
                     </HeroIntro>
                     <HeroTitle>
-                        My Name is Raendy
+                        My name is Raendy
                     </HeroTitle>
                     <HeroDesc>
-                        Information System student <br/> Passionate about UI/UX Design and Web Development.
+                        Information System Student |<br/> Passionate about UI/UX Design and Web Development.
                     </HeroDesc>
                     <HeroBtn>
                         <CtaBtn>Contact</CtaBtn>
