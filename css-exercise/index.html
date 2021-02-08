@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exercise</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="/icons/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-logo">
+            <a href="">kb.ram</a>
+        </div>
+
+        <div class="nav-toggle hide-for-desktop" id="hamburger" onclick="toggleFunction()">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+
+        <ul class="nav-items hide-for-mobile" id="items">
+            <li class="nav-link"><a href="#home" onclick="restartToggle()">Home</a></li>
+            <li class="nav-link"><a href="#about" onclick="restartToggle()">About</a></li>
+            <li class="nav-link"><a href="#portfolio" onclick="restartToggle()">Portfolio</a></li>
+            <li class="nav-link"><a href="#contact" onclick="restartToggle()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <div class="wrapper">
+                <p class="introduction">Hello, my name is</p>
+                <h5>Raendy Andhika El Vicar</h5>
+                <p class="description">Information System Student | <br> Passionate about UI/UX Design and Web Development</p>
+    
+                <div class="button-section">
+                    <a href="" class="cv-button" target="_blank" href="./pdf/CV_Raendy Andhika El Vicar.pdf" download="CV_Raendy Andhika El Vicar.pdf">Download CV</a>
+                    <a href="" class="contact-button">Contact Me</a>
+                </div>  
+            </div>
+        </div>
+
+        <div class="hero-img">
+            <img src="/images/illustration.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="about-section" id="about">
+        <div class="title-section"><h1>About Me</h1></div>
+
+        <div class="about-content">
+            <div class="about-img" id="item-1"><img class="clip-circle" src="/images/IMG-20190801-WA0052.jpg" alt=""></div>
+
+
+            <p class="about-desc" id="item-2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit odit, accusamus animi alias, veritatis quibusdam a aut laboriosam ex enim delectus molestiae provident obcaecati recusandae porro aperiam! Accusamus, voluptatibus. Ut qui repellendus placeat delectus?
+            </p>
+        </div>
+
+    </div>
+
+    <a id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa fa-chevron-up"></i></a>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
