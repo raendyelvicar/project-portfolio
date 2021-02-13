@@ -1,11 +1,16 @@
 import React from 'react'
+import About from './About/About'
+import Contact from './Contact/Contact'
+import Portfolio from './Portfolio/Portfolio'
 
-const Home = () => {
+const Pages = () => {
     return (
-        <div style={{display:'flex', justifyContent:'center', alignItems:'center', height:'100vh'}}>
-            <h1>This is home page</h1>
-        </div>
+        <>
+            <About/>
+            <Portfolio/>
+            <Contact/>
+        </>
     )
 }
 
-export default Home
+export default Pages

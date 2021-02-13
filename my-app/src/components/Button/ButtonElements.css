@@ -1,0 +1,39 @@
+.btn{
+    background: transparent;
+    padding:0.75em 3em;
+    border:0.16em solid #FFFFFF;
+    margin-top:20px;
+    margin-right:20px;
+    color:#fff;
+    text-decoration:none;
+    text-align:center;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    color: #fffefe;
+    background-color: rgba(0, 0, 0, 0.398);
+}
+
+.btn.white{
+    background-color:#fff;
+    color:#111111;
+}
+
+.btn.white:hover{
+    color:#fff;
+    background-color:transparent;
+}
+
+@media screen and (max-width:560px){
+    .btn{
+        padding:0.5em 6em;
+        width:100%;
+        margin:10px auto;
+        text-align:center;
+    }
+}
