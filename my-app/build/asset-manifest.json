@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.921de101.chunk.css",
-    "main.js": "/static/js/main.7aff3590.chunk.js",
-    "main.js.map": "/static/js/main.7aff3590.chunk.js.map",
+    "main.css": "/static/css/main.6abfc8a9.chunk.css",
+    "main.js": "/static/js/main.9af8e709.chunk.js",
+    "main.js.map": "/static/js/main.9af8e709.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4d25ba2e.js",
     "runtime-main.js.map": "/static/js/runtime-main.4d25ba2e.js.map",
-    "static/js/2.cb0c5f39.chunk.js": "/static/js/2.cb0c5f39.chunk.js",
-    "static/js/2.cb0c5f39.chunk.js.map": "/static/js/2.cb0c5f39.chunk.js.map",
+    "static/js/2.4d8a5582.chunk.js": "/static/js/2.4d8a5582.chunk.js",
+    "static/js/2.4d8a5582.chunk.js.map": "/static/js/2.4d8a5582.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.921de101.chunk.css.map": "/static/css/main.921de101.chunk.css.map",
-    "static/js/2.cb0c5f39.chunk.js.LICENSE.txt": "/static/js/2.cb0c5f39.chunk.js.LICENSE.txt",
+    "static/css/main.6abfc8a9.chunk.css.map": "/static/css/main.6abfc8a9.chunk.css.map",
+    "static/js/2.4d8a5582.chunk.js.LICENSE.txt": "/static/js/2.4d8a5582.chunk.js.LICENSE.txt",
+    "static/media/Resume_Raendy Andhika El Vicar.c0174032.pdf": "/static/media/Resume_Raendy Andhika El Vicar.c0174032.pdf",
     "static/media/video.119515df.mp4": "/static/media/video.119515df.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.4d25ba2e.js",
-    "static/js/2.cb0c5f39.chunk.js",
-    "static/css/main.921de101.chunk.css",
-    "static/js/main.7aff3590.chunk.js"
+    "static/js/2.4d8a5582.chunk.js",
+    "static/css/main.6abfc8a9.chunk.css",
+    "static/js/main.9af8e709.chunk.js"
   ]
 }
