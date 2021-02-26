@@ -1,27 +1,29 @@
-import React, {useState} from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import './App.css';
-import HeroSection  from './pages/HeroSection';
-import Pages from './pages';
-import Navbar       from './components/Navbar';
-import ToggleNav    from './components/ToggleMenu';
-import Card         from './components/Card';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import HeroSection from "./pages/HeroSection";
+import Pages from "./pages";
+import Login from "./pages/Login/Login";
+import Navbar from "./components/Navbar";
+import ToggleNav from "./components/ToggleMenu";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [token, setToken] = useState();
 
-  const toggle = () =>{
-    setIsOpen(!isOpen)
+  if (!token) {
+    return <Login setToken={setToken} />;
   }
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <Router>
-      <Navbar toggle={toggle}/>
-      <ToggleNav isOpen={isOpen} toggle={toggle}/>
+    <>
+      <Navbar toggle={toggle} />
+      <ToggleNav isOpen={isOpen} toggle={toggle} />
       <HeroSection />
-      <Pages/>
-    </Router>
-    
+      <Pages />
+    </>
   );
 }
 

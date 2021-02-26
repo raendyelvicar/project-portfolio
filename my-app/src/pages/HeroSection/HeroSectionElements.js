@@ -1,12 +1,11 @@
 import styled from 'styled-components'
 
 export const HeroContainer = styled.div`
-    background:#111111;
     display:flex;
     justify-content:center;
     align-items:center;
-    height:100vh;
-    posiiton:relative;
+    height:90vh;
+    position:relative;
     overflow:hidden;
     z-indez:1;
 `
@@ -31,7 +30,6 @@ export const VideoBg = styled.video`
 `
 
 export const HeroContent = styled.div`
-    // background:#111111;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -39,10 +37,7 @@ export const HeroContent = styled.div`
     width:100%;
     height:100%;
     z-index:1;
-
-    @media screen and (max-width:375px){
-
-    }
+    
 `
 
 export const HeroWrapper = styled.div`
@@ -65,9 +60,11 @@ export const HeroWrapper = styled.div`
 `
 
 export const HeroIntro = styled.p`
-    font-size:16px;
+    font-size:18px;
     color:#fff;
     z-index:1;
+    margin-top:10px;
+    margin-bottom:10px;
 
     &::after{
         height:2px;
@@ -80,15 +77,17 @@ export const HeroIntro = styled.p`
 `
 
 export const HeroTitle = styled.h1`
-    font-size:48px;
+    font-size:42px;
     color:#fff;
     margin-top:10px;
+    margin-bottom:10px;
 `
 
 export const HeroDesc = styled.p`
     font-size:18px;
     color:#fff;
     margin-top:10px;
+    margin-bottom:10px;
     line-height:1.5;
 `
 

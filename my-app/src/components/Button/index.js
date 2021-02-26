@@ -1,13 +1,12 @@
 import React from 'react'
 import './ButtonElements.css'
-import file from '../../assets/pdf/Resume_Raendy Andhika El Vicar.pdf'
 
 const Button = (props) => {
-    const className = props.className;
+    const {className, file, fileName} = props;
 
     return (
         <>
-            <a className={`btn ${className}`} href={file} download="Resume.pdf"> 
+            <a className={`btn ${className}`} href={file} download={fileName}> 
                 {props.children}
             </a>
         </>

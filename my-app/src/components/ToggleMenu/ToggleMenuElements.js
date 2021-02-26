@@ -33,9 +33,9 @@ export const ToggleNavMenu = styled.ul`
     display:grid;
     grid-template-columns:1fr;
     grid-template-rows:repeat(6, 80px);
-    gap:30px;
+    gap:80px;
     position:absolute;
-    top:30%;
+    top:20%;
     right:1%;
 
     @media screen and (max-width: 340px){

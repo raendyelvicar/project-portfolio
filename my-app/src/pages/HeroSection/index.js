@@ -2,6 +2,7 @@ import React from 'react'
 import {HeroContainer, HeroBg, VideoBg, HeroContent,HeroWrapper, HeroTitle, HeroDesc, HeroIntro, HeroBtn} from './HeroSectionElements'
 import video from '../../assets/videos/video.mp4'
 import Button from '../../components/Button'
+import file from '../../assets/pdf/Resume_Raendy Andhika El Vicar.pdf'
 
 const HeroSection = () => {
     return (
@@ -21,8 +22,8 @@ const HeroSection = () => {
                         Information System Student |<br/> Passionate about UI/UX Design and Web Development.
                     </HeroDesc>
                     <HeroBtn>
-                        <Button className='white'>Download CV</Button>
-                        <Button className>Contact</Button>
+                        <Button className='white' file={file} fileName="Resume_Raendy Andhika El Vicar.pdf">Download CV</Button>
+                        <Button>Contact</Button>
                     </HeroBtn>
                 </HeroWrapper>
             </HeroContent>
