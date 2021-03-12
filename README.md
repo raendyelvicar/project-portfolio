@@ -1,4 +1,5 @@
-# React App - Portfolio Website
-## Author : Raendy Andhika El Vicar
+Website Application
+### Build with ReactJS, Express, MySQL
+### Author : Raendy Andhika El Vicar
 
 
